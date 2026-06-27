@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autorijschool Alan | Rijbewijs halen in Almere</title>
+    <meta name="description"
+        content="Autorijschool Alan in Almere. Persoonlijke rijlessen, hoge slagingspercentages. Rijbewijs in 1 keer halen met geduldige instructeur.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        },
+                        accent: {
+                            400: '#f59e0b',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    },
+                    animation: {
+                        'fade-up': 'fadeUp 0.8s ease-out forwards',
+                        'slide-in': 'slideIn 0.6s ease-out forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        slideIn: {
+                            '0%': { opacity: '0', transform: 'translateX(-30px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .glass-dark {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #f59e0b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+        }
+
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .stat-counter {
+            font-variant-numeric: tabular-nums;
+        }
+
+        .hero-pattern {
+            background-image: radial-gradient(circle at 1px 1px, rgba(59, 130, 246, 0.15) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+
+        .blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.4;
+            z-index: 0;
+        }
+
+        .testimonial-track {
+            animation: scroll 40s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .testimonial-track:hover {
+            animation-play-state: paused;
+        }
+
+        .nav-link {
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #f59e0b;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="font-sans text-slate-800 bg-slate-50 antialiased overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500">
+        <!-- Top Bar -->
+        <div id="top-bar"
+            class="bg-slate-900 text-slate-300 text-xs h-8 transition-all duration-300 ease-in-out overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex justify-between items-center">
+                <span class="flex items-center gap-1.5">
+                    <svg class="w-3.5 h-3.5 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Maandag - Zondag : 09:00 - 20:00
+                </span>
+                <div class="hidden sm:flex items-center gap-4">
+                    <a href="tel:0614792720" class="flex items-center gap-1.5 hover:text-white transition-colors">
+                        <svg class="w-3.5 h-3.5 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        06-14792720
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="#" class="flex items-center gap-3 group">
+                    <div
+                        class="w-10 h-10 bg-gradient-to-br from-primary-600 to-primary-800 rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-lg group-hover:shadow-primary-500/30 transition-shadow">
+                        A
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-bold text-lg leading-tight text-slate-900">Autorijschool</span>
+                        <span class="font-extrabold text-primary-600 leading-tight -mt-1">ALAN</span>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#over"
+                        class="nav-link text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Over
+                        Alan</a>
+                    <a href="#geslaagden"
+                        class="nav-link text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Geslaagden</a>
+
+                    <a href="#contact"
+                        class="px-5 py-2.5 bg-primary-600 hover:bg-primary-700 text-white text-sm font-semibold rounded-full transition-all hover:shadow-lg hover:shadow-primary-500/30 hover:-translate-y-0.5">
+                        Contact
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-slate-100 transition-colors">
+                    <svg class="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden glass border-t border-slate-200">
+            <div class="px-4 py-4 space-y-3">
+                <a href="#over" class="block px-4 py-2 rounded-lg hover:bg-slate-100 text-sm font-medium">Over Alan</a>
+                <a href="#geslaagden"
+                    class="block px-4 py-2 rounded-lg hover:bg-slate-100 text-sm font-medium">Geslaagden</a>
+
+                <a href="#contact"
+                    class="block px-4 py-2 rounded-lg bg-primary-600 text-white text-sm font-medium text-center">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-white">
+        <!-- Background Elements -->
+        <div class="blob bg-primary-400 w-96 h-96 -top-20 -right-20 animate-float"></div>
+        <div class="blob bg-accent-400 w-72 h-72 bottom-20 -left-20 animate-float" style="animation-delay: 2s;"></div>
+        <div class="absolute inset-0 hero-pattern opacity-50"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8 animate-fade-up">
+                    <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight">
+                        Leren rijden<br>
+                        <span class="text-gradient">met vertrouwen</span>
+                    </h1>
+
+                    <p class="text-xl text-slate-600 leading-relaxed max-w-lg">
+                        Persoonlijke rijlessen in Almere met een geduldige, professionele instructeur.
+                    </p>
+
+                    <ul class="space-y-4 text-slate-700 mt-6 max-w-lg">
+                        <li class="flex items-start gap-3">
+                            <div class="mt-1 bg-primary-100 p-1.5 rounded-full flex-shrink-0">
+                                <svg class="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong class="block text-slate-900">Ervaren rijschool</strong>
+                                <span class="text-sm">Autorijschool Alan geeft al meer dan 15 jaar rijles.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="mt-1 bg-primary-100 p-1.5 rounded-full flex-shrink-0">
+                                <svg class="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong class="block text-slate-900">Hoog slagingspercentage</strong>
+                                <span class="text-sm">Elke detail wordt voorbereidt voor het praktijkexamen.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="mt-1 bg-primary-100 p-1.5 rounded-full flex-shrink-0">
+                                <svg class="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong class="block text-slate-900">Betalen in termijnen</strong>
+                                <span class="text-sm">Betalen in termijnen voor een pakket is absoluut mogelijk.</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="flex flex-col sm:flex-row flex-wrap gap-4">
+                        <a href="tel:0614792720"
+                            class="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-bold rounded-2xl transition-all hover:shadow-xl hover:shadow-primary-500/30 hover:-translate-y-1">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            Bel 06-14792720
+                        </a>
+                        <a href="#contact"
+                            class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white border-2 border-slate-200 hover:border-primary-300 text-slate-700 font-bold rounded-2xl transition-all hover:shadow-lg hover:-translate-y-1">
+                            Plan een proefles
+                            <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+
+                    </div>
+
+                    <div class="flex items-center gap-6 pt-4">
+                        <div class="flex -space-x-3">
+                            <div
+                                class="w-10 h-10 bg-primary-100 text-primary-700 rounded-full border-2 border-white flex items-center justify-center font-bold text-sm flex-shrink-0">
+                                M</div>
+                            <div
+                                class="w-10 h-10 bg-emerald-100 text-emerald-700 rounded-full border-2 border-white flex items-center justify-center font-bold text-sm flex-shrink-0">
+                                J</div>
+                            <div
+                                class="w-10 h-10 bg-slate-100 text-slate-700 rounded-full border-2 border-white flex items-center justify-center font-bold text-sm flex-shrink-0">
+                                L</div>
+                            <div
+                                class="w-10 h-10 bg-amber-100 text-amber-700 rounded-full border-2 border-white flex items-center justify-center font-bold text-sm flex-shrink-0">
+                                C</div>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-1 text-accent-500">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                            </div>
+                            <p class="text-sm font-semibold text-slate-700">229 Google Reviews</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative lg:h-[600px] flex items-center justify-center">
+                    <div class="relative w-full max-w-md">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-primary-500 to-primary-700 rounded-[3rem] rotate-3 opacity-20 blur-2xl">
+                        </div>
+                        <div
+                            class="relative bg-white rounded-[2.5rem] shadow-2xl overflow-hidden border border-slate-100">
+                            <img src="car.webp" alt="Rijles auto" class="w-full h-64 object-cover">
+                            <div class="p-8">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
+                                        <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.cbr.nl/nl/service/nl/rijscholen/autorijschool-alan"
+                                            target="_blank" rel="noopener noreferrer"
+                                            class="font-bold text-slate-900 hover:text-primary-600 transition-colors flex items-center gap-1">
+                                            CBR Erkend
+                                            <svg class="w-3.5 h-3.5 opacity-60" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                            </svg>
+                                        </a>
+                                        <p class="text-sm text-slate-500">Rijschoolnummer 2416F9</p>
+                                    </div>
+                                </div>
+                                <div class="space-y-3">
+                                    <div class="flex justify-between items-center p-3 bg-slate-50 rounded-xl">
+                                        <span class="text-sm font-medium text-slate-600">Eerste examen</span>
+                                        <span class="text-lg font-bold text-primary-600">71%</span>
+                                    </div>
+                                    <div class="flex justify-between items-center p-3 bg-slate-50 rounded-xl">
+                                        <span class="text-sm font-medium text-slate-600">Herexamen</span>
+                                        <span class="text-lg font-bold text-accent-500">81%</span>
+                                    </div>
+                                    <div class="flex justify-between items-center p-3 bg-slate-50 rounded-xl">
+                                        <span class="text-sm font-medium text-slate-600">Totaal Rijschool</span>
+                                        <span class="text-lg font-bold text-green-600">74%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="over" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="scroll-reveal relative">
+                    <div
+                        class="absolute -inset-4 bg-gradient-to-r from-primary-500 to-accent-400 rounded-[2rem] opacity-20 blur-xl">
+                    </div>
+                    <div class="relative rounded-[2rem] overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&h=600&fit=crop"
+                            alt="Rijinstructeur" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                            <p class="text-white font-bold text-lg">Alan</p>
+                            <p class="text-white/80 text-sm">Rijinstructeur & eigenaar</p>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-4 border border-slate-100">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <a href="https://www.cbr.nl/nl/service/nl/rijscholen/autorijschool-alan" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="font-bold text-slate-900 hover:text-primary-600 transition-colors flex items-center gap-1">
+                                    CBR Erkend
+                                    <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                    </svg>
+                                </a>
+                                <p class="text-xs text-slate-500">Sinds 2015</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll-reveal space-y-6">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 bg-accent-50 border border-accent-200 rounded-full text-accent-700 text-xs font-bold uppercase tracking-wider">
+                        Over Ons
+                    </div>
+                    <h2 class="text-4xl font-extrabold text-slate-900 leading-tight">
+                        Wie zijn wij?
+                    </h2>
+                    <p class="text-lg text-slate-600 leading-relaxed">
+                        Bij ons kun je met plezier leren rijden en op een effectieve wijze je rijbewijs halen bij een
+                        gediplomeerde en ervaren rijinstructeur. Ben je op zoek naar een betrouwbare rijschool? En wil
+                        je goedkoop, snel en veilig je rijbewijs halen? Dan ben je bij ons aan het goede adres.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div
+                            class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 hover:bg-primary-50 transition-colors">
+                            <div
+                                class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900">Ophaal en breng service</h3>
+                                <p class="text-sm text-slate-500">Je wordt naar keuze van huis, werk of school gehaald
+                                    en / of gebracht</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 hover:bg-primary-50 transition-colors">
+                            <div
+                                class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900">Betalingen</h3>
+                                <p class="text-sm text-slate-500">Betalen in termijnen is voor alle pakketten mogelijk
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 hover:bg-primary-50 transition-colors">
+                            <div
+                                class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900">Faalangst</h3>
+                                <p class="text-sm text-slate-500">Heb je last van faalangst? Geen probleem we lossen het
+                                    samen op.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 hover:bg-primary-50 transition-colors">
+                            <div
+                                class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900">Eerder gehaald?</h3>
+                                <p class="text-sm text-slate-500">Geld terug van je overige lessen na het behalen van je
+                                    rijbewijs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resultaten Section -->
+    <section id="resultaten" class="py-24 bg-white border-t border-slate-100 relative overflow-hidden">
+        <!-- Background decoration -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-primary-50 opacity-50 blur-3xl">
+        </div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-accent-50 opacity-50 blur-3xl">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16 scroll-reveal">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 bg-primary-50 border border-primary-200 rounded-full text-primary-700 text-xs font-bold uppercase tracking-wider mb-4">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                    CBR Resultaten
+                </div>
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-4">
+                    Resultaten voor Auto
+                </h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+                    Trots op onze hoge slagingspercentages bij examenlocatie <strong
+                        class="text-primary-600">Emmeloord</strong>. Onze gerichte en persoonlijke begeleiding werpt
+                    zijn vruchten af!
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Stat 1 -->
+                <div
+                    class="scroll-reveal bg-white rounded-3xl p-8 text-center border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="relative w-32 h-32 mx-auto mb-6 flex items-center justify-center">
+                        <svg class="w-full h-full transform -rotate-90 absolute inset-0" viewBox="0 0 36 36">
+                            <path class="text-slate-100" stroke-width="3" stroke="currentColor" fill="none"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="text-primary-600 drop-shadow-md" stroke-dasharray="71, 100" stroke-width="3"
+                                stroke-linecap="round" stroke="currentColor" fill="none"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                        <div class="relative flex items-baseline justify-center">
+                            <span class="text-3xl font-extrabold text-slate-900 stat-counter" data-target="71">0</span>
+                            <span class="text-xl font-bold text-slate-600">%</span>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-xl mb-2">Eerste Examens</h3>
+                    <p class="text-sm text-slate-500 bg-slate-50 py-2 px-4 rounded-lg inline-block">Gebaseerd op
+                        <strong>45</strong> examens
+                    </p>
+                </div>
+
+                <!-- Stat 2 -->
+                <div class="scroll-reveal bg-white rounded-3xl p-8 text-center border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-transform duration-300"
+                    style="transition-delay: 0.1s">
+                    <div class="relative w-32 h-32 mx-auto mb-6 flex items-center justify-center">
+                        <svg class="w-full h-full transform -rotate-90 absolute inset-0" viewBox="0 0 36 36">
+                            <path class="text-slate-100" stroke-width="3" stroke="currentColor" fill="none"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="text-accent-500 drop-shadow-md" stroke-dasharray="81, 100" stroke-width="3"
+                                stroke-linecap="round" stroke="currentColor" fill="none"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                        <div class="relative flex items-baseline justify-center">
+                            <span class="text-3xl font-extrabold text-slate-900 stat-counter" data-target="81">0</span>
+                            <span class="text-xl font-bold text-slate-600">%</span>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-xl mb-2">Herexamens</h3>
+                    <p class="text-sm text-slate-500 bg-slate-50 py-2 px-4 rounded-lg inline-block">Gebaseerd op
+                        <strong>21</strong> examens
+                    </p>
+                </div>
+
+                <!-- Stat 3 -->
+                <div class="scroll-reveal bg-white rounded-3xl p-8 text-center border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-transform duration-300"
+                    style="transition-delay: 0.2s">
+                    <div class="relative w-32 h-32 mx-auto mb-6 flex items-center justify-center">
+                        <svg class="w-full h-full transform -rotate-90 absolute inset-0" viewBox="0 0 36 36">
+                            <path class="text-slate-100" stroke-width="3" stroke="currentColor" fill="none"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="text-green-500 drop-shadow-md" stroke-dasharray="74, 100" stroke-width="3"
+                                stroke-linecap="round" stroke="currentColor" fill="none"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                        <div class="relative flex items-baseline justify-center">
+                            <span class="text-3xl font-extrabold text-slate-900 stat-counter" data-target="74">0</span>
+                            <span class="text-xl font-bold text-slate-600">%</span>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-xl mb-2">Totaal Rijschool</h3>
+                    <p class="text-sm text-slate-500 bg-slate-50 py-2 px-4 rounded-lg inline-block">Gemiddeld
+                        slagingspercentage</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section id="geslaagden" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-reveal">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 bg-green-50 border border-green-200 rounded-full text-green-700 text-xs font-bold uppercase tracking-wider mb-4">
+                    Succesverhalen
+                </div>
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-4">
+                    Geslaagde leerlingen
+                </h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+                    Elke foto vertelt een verhaal van hard werken, doorzettingsvermogen en succes.
+                    Jij bent de volgende!
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Student 1 -->
+                <div
+                    class="scroll-reveal card-hover bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-100">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="testmonials/morghan.webp" alt="Morghan"
+                            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="px-3 py-1 bg-accent-500 text-white text-sm font-bold rounded-full shadow-lg">Geslaagd</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-1 text-accent-500 mb-2">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </div>
+                        <p class="text-slate-600 italic mb-4">"Beste rijschool van Almere! Alan is vriendelijk, sociaal,
+                            streng maar rechtvaardig en geduldig. Dank zij hem heb ik mijn rijbewijs in 1x gehaald met
+                            zelfvertrouwen."</p>
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center text-primary-700 font-bold">
+                                M</div>
+                            <div>
+                                <p class="font-bold text-slate-900">Morghan</p>
+                                <p class="text-xs text-slate-500">Geslaagd in 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Student 2 -->
+                <div class="scroll-reveal card-hover bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-100"
+                    style="transition-delay: 0.1s">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="testmonials/masin.webp" alt="Masin"
+                            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="px-3 py-1 bg-accent-500 text-white text-sm font-bold rounded-full shadow-lg">Geslaagd</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-1 text-accent-500 mb-2">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </div>
+                        <p class="text-slate-600 italic mb-4">" Leren rijden met vertrouwen "</p>
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center text-primary-700 font-bold">
+                                M</div>
+                            <div>
+                                <p class="font-bold text-slate-900">Masin</p>
+                                <p class="text-xs text-slate-500">Geslaagd in 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Student 3 -->
+                <div class="scroll-reveal card-hover bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-100"
+                    style="transition-delay: 0.2s">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="testmonials/jip.webp" alt="Jip"
+                            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="px-3 py-1 bg-accent-500 text-white text-sm font-bold rounded-full shadow-lg">Geslaagd</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-1 text-accent-500 mb-2">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </div>
+                        <p class="text-slate-600 italic mb-4">"In 1x geslaagd super fijn!"</p>
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center text-primary-700 font-bold">
+                                J</div>
+                            <div>
+                                <p class="font-bold text-slate-900">Jip</p>
+                                <p class="text-xs text-slate-500">Geslaagd in 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Student 4 -->
+                <div
+                    class="scroll-reveal card-hover bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-100">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="testmonials/larsse.webp" alt="Larsse"
+                            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="px-3 py-1 bg-accent-500 text-white text-sm font-bold rounded-full shadow-lg">Geslaagd</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-1 text-accent-500 mb-2">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </div>
+                        <p class="text-slate-600 italic mb-4">"Uitstekende rijschool en rij-instructeur!"</p>
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center text-primary-700 font-bold">
+                                L</div>
+                            <div>
+                                <p class="font-bold text-slate-900">Larsse</p>
+                                <p class="text-xs text-slate-500">Geslaagd in 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Student 5 (Charley - now completed) -->
+                <div class="scroll-reveal card-hover bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-100"
+                    style="transition-delay: 0.1s">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="testmonials/charley.webp" alt="Charley"
+                            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="px-3 py-1 bg-accent-500 text-white text-sm font-bold rounded-full shadow-lg">Geslaagd</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-1 text-accent-500 mb-2">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </div>
+                        <p class="text-slate-600 italic mb-4">"Fantastische rijschool, ervaren en professionele
+                            rij-instructeur met een persoonlijke aanpak!"</p>
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center text-primary-700 font-bold">
+                                C</div>
+                            <div>
+                                <p class="font-bold text-slate-900">Charley</p>
+                                <p class="text-xs text-slate-500">Geslaagd in 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Student 6 (optional) -->
+                <div class="scroll-reveal card-hover bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-100"
+                    style="transition-delay: 0.2s">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="testmonials/kim.webp" alt="Kim"
+                            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="px-3 py-1 bg-accent-500 text-white text-sm font-bold rounded-full shadow-lg">Geslaagd</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-1 text-accent-500 mb-2">
+                            <!-- stars -->
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </div>
+                        <p class="text-slate-600 italic mb-4">"Echt een top rijschool! Met Alan slaag je gegarandeerd!"
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center text-primary-700 font-bold">
+                                K</div>
+                            <div>
+                                <p class="font-bold text-slate-900">Kim</p>
+                                <p class="text-xs text-slate-500">Geslaagd in 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pakketten Section -->
+    <section id="pakketten" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-reveal">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 bg-primary-50 text-primary-600 font-bold uppercase tracking-wider mb-4 text-sm rounded-full">
+                    RIJLESPAKKETTEN
+                </div>
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-4">
+                    Elk pakket is inclusief<br>een praktijkexamen
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Pakket 1 -->
+                <div
+                    class="scroll-reveal card-hover bg-white rounded-2xl shadow-xl border border-slate-100 p-8 text-center relative pt-16">
+                    <div
+                        class="absolute top-0 left-1/2 -translate-x-1/2 bg-primary-600 text-white px-10 py-2.5 font-bold text-lg">
+                        € 1200
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-6">Pakket 1</h3>
+                    <div class="flex items-center justify-center gap-2 text-slate-500 mb-6 text-sm font-medium">
+                        <span class="flex items-center gap-1.5">
+                            <svg class="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                                <path
+                                    d="M3 4a1 1 0 00-1 1v10h1v-1a2.5 2.5 0 115 0h4a2.5 2.5 0 115 0v1h1V5a1 1 0 00-1-1H3zm2 3h10v3H5V7z" />
+                            </svg>
+                            15 Rijlessen
+                        </span>
+                        <span>/</span>
+                        <span class="flex items-center gap-1.5">
+                            <svg class="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            Praktijkexamen
+                        </span>
+                    </div>
+                    <p class="text-slate-500 text-sm leading-relaxed">Rijbewijs gehaald en nog lessen over? Dan krijg je
+                        geld terug van de overige lessen</p>
+                </div>
+
+                <!-- Pakket 2 -->
+                <div class="scroll-reveal card-hover bg-white rounded-2xl shadow-xl border border-slate-100 p-8 text-center relative pt-16"
+                    style="transition-delay: 0.1s">
+                    <div
+                        class="absolute top-0 left-1/2 -translate-x-1/2 bg-slate-700 text-white px-10 py-2.5 font-bold text-lg">
+                        € 1500
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-6">Pakket 2</h3>
+                    <div class="flex items-center justify-center gap-2 text-slate-500 mb-6 text-sm font-medium">
+                        <span class="flex items-center gap-1.5">
+                            <svg class="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                                <path
+                                    d="M3 4a1 1 0 00-1 1v10h1v-1a2.5 2.5 0 115 0h4a2.5 2.5 0 115 0v1h1V5a1 1 0 00-1-1H3zm2 3h10v3H5V7z" />
+                            </svg>
+                            20 Rijlessen
+                        </span>
+                        <span>/</span>
+                        <span class="flex items-center gap-1.5">
+                            <svg class="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            Praktijkexamen
+                        </span>
+                    </div>
+                    <p class="text-slate-500 text-sm leading-relaxed">Rijbewijs gehaald en nog lessen over? Dan krijg je
+                        geld terug van de overige lessen</p>
+                </div>
+
+                <!-- Pakket 3 -->
+                <div class="scroll-reveal card-hover bg-white rounded-2xl shadow-xl border border-slate-100 p-8 text-center relative pt-16"
+                    style="transition-delay: 0.2s">
+                    <div
+                        class="absolute top-0 left-1/2 -translate-x-1/2 bg-primary-600 text-white px-10 py-2.5 font-bold text-lg">
+                        € 1800
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-6">Pakket 3</h3>
+                    <div class="flex items-center justify-center gap-2 text-slate-500 mb-6 text-sm font-medium">
+                        <span class="flex items-center gap-1.5">
+                            <svg class="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                                <path
+                                    d="M3 4a1 1 0 00-1 1v10h1v-1a2.5 2.5 0 115 0h4a2.5 2.5 0 115 0v1h1V5a1 1 0 00-1-1H3zm2 3h10v3H5V7z" />
+                            </svg>
+                            25 Rijlessen
+                        </span>
+                        <span>/</span>
+                        <span class="flex items-center gap-1.5">
+                            <svg class="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            Praktijkexamen
+                        </span>
+                    </div>
+                    <p class="text-slate-500 text-sm leading-relaxed">Rijbewijs gehaald en nog lessen over? Dan krijg je
+                        geld terug van de overige lessen</p>
+                </div>
+
+                <!-- Pakket 4 -->
+                <div
+                    class="scroll-reveal card-hover bg-white rounded-2xl shadow-xl border border-slate-100 p-8 text-center relative pt-16">
+                    <div
+                        class="absolute top-0 left-1/2 -translate-x-1/2 bg-slate-700 text-white px-10 py-2.5 font-bold text-lg">
+                        € 2100
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-6">Pakket 4</h3>
+                    <div class="flex items-center justify-center gap-2 text-slate-500 mb-6 text-sm font-medium">
+                        <span class="flex items-center gap-1.5">
+                            <svg class="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                                <path
+                                    d="M3 4a1 1 0 00-1 1v10h1v-1a2.5 2.5 0 115 0h4a2.5 2.5 0 115 0v1h1V5a1 1 0 00-1-1H3zm2 3h10v3H5V7z" />
+                            </svg>
+                            30 Rijlessen
+                        </span>
+                        <span>/</span>
+                        <span class="flex items-center gap-1.5">
+                            <svg class="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            Praktijkexamen
+                        </span>
+                    </div>
+                    <p class="text-slate-500 text-sm leading-relaxed">Rijbewijs gehaald en nog lessen over? Dan krijg je
+                        geld terug van de overige lessen</p>
+                </div>
+
+                <!-- Pakket 5 -->
+                <div class="scroll-reveal card-hover bg-white rounded-2xl shadow-xl border border-slate-100 p-8 text-center relative pt-16"
+                    style="transition-delay: 0.1s">
+                    <div
+                        class="absolute top-0 left-1/2 -translate-x-1/2 bg-primary-600 text-white px-10 py-2.5 font-bold text-lg">
+                        € 2400
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-6">Pakket 5</h3>
+                    <div class="flex items-center justify-center gap-2 text-slate-500 mb-6 text-sm font-medium">
+                        <span class="flex items-center gap-1.5">
+                            <svg class="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                                <path
+                                    d="M3 4a1 1 0 00-1 1v10h1v-1a2.5 2.5 0 115 0h4a2.5 2.5 0 115 0v1h1V5a1 1 0 00-1-1H3zm2 3h10v3H5V7z" />
+                            </svg>
+                            35 Rijlessen
+                        </span>
+                        <span>/</span>
+                        <span class="flex items-center gap-1.5">
+                            <svg class="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            Praktijkexamen
+                        </span>
+                    </div>
+                    <p class="text-slate-500 text-sm leading-relaxed">Rijbewijs gehaald en nog lessen over? Dan krijg je
+                        geld terug van de overige lessen</p>
+                </div>
+
+                <!-- Pakket 6 -->
+                <div class="scroll-reveal card-hover bg-white rounded-2xl shadow-xl border border-slate-100 p-8 text-center relative pt-16"
+                    style="transition-delay: 0.2s">
+                    <div
+                        class="absolute top-0 left-1/2 -translate-x-1/2 bg-slate-700 text-white px-10 py-2.5 font-bold text-lg">
+                        € 2700
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-6">Pakket 6</h3>
+                    <div class="flex items-center justify-center gap-2 text-slate-500 mb-6 text-sm font-medium">
+                        <span class="flex items-center gap-1.5">
+                            <svg class="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                                <path
+                                    d="M3 4a1 1 0 00-1 1v10h1v-1a2.5 2.5 0 115 0h4a2.5 2.5 0 115 0v1h1V5a1 1 0 00-1-1H3zm2 3h10v3H5V7z" />
+                            </svg>
+                            40 Rijlessen
+                        </span>
+                        <span>/</span>
+                        <span class="flex items-center gap-1.5">
+                            <svg class="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            Praktijkexamen
+                        </span>
+                    </div>
+                    <p class="text-slate-500 text-sm leading-relaxed">Rijbewijs gehaald en nog lessen over? Dan krijg je
+                        geld terug van de overige lessen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-reveal">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 bg-primary-50 border border-primary-200 rounded-full text-primary-700 text-xs font-bold uppercase tracking-wider mb-4">
+                    Neem contact op
+                </div>
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-4">
+                    Klaar om te starten?
+                </h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+                    Beller is sneller, of stuur anders een bericht via WhatsApp of Email.
+                </p>
+            </div>
+
+            <div class="max-w-2xl mx-auto">
+                <div class="scroll-reveal space-y-8">
+                    <div class="bg-primary-900 text-white rounded-2xl shadow-xl p-8">
+                        <h3 class="text-2xl font-bold mb-6">Direct contact</h3>
+                        <div class="space-y-5">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-12 h-12 bg-primary-800 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-primary-200">Telefoon</p>
+                                    <a href="tel:0614792720"
+                                        class="text-lg font-bold hover:text-accent-400 transition-colors">06-14792720</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-12 h-12 bg-primary-800 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-primary-200">E-mail</p>
+                                    <a href="mailto:autorijschoolalan@hotmail.nl"
+                                        class="text-lg font-bold hover:text-accent-400 transition-colors">autorijschoolalan@hotmail.nl</a>
+                                </div>
+                            </div>
+                            <a href="https://maps.app.goo.gl/Z3LfsyrtgbR3LUM3A" target="_blank"
+                                rel="noopener noreferrer"
+                                class="flex items-start gap-4 group p-3 -m-3 rounded-2xl hover:bg-primary-800/40 transition-all duration-300">
+                                <div
+                                    class="w-12 h-12 bg-primary-800 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-accent-500 group-hover:text-slate-900 transition-colors duration-300">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-primary-200 flex items-center gap-1.5">
+                                        Adres
+                                        <svg class="w-3.5 h-3.5 opacity-60 group-hover:opacity-100 transition-all duration-300"
+                                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                        </svg>
+                                    </p>
+                                    <p
+                                        class="text-lg font-bold group-hover:text-accent-400 transition-colors duration-300">
+                                        Kretastraat 82</p>
+                                    <p class="text-primary-200 text-sm">1339 VX Almere</p>
+                                    <span
+                                        class="inline-flex items-center gap-1 text-xs text-accent-400 font-semibold mt-1 group-hover:underline">
+                                        Bekijk op Google Maps &rarr;
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl shadow-lg p-6 border border-slate-100">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-bold text-slate-900">CBR Rijschoolnummer</p>
+                                <p class="text-primary-700 font-semibold">2416F9</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center text-white font-bold">
+                        A</div>
+                    <span class="text-white font-semibold">Autorijschool Alan</span>
+                </div>
+                <div class="flex items-center gap-6 text-sm">
+                    <a href="#over" class="hover:text-white transition-colors">Over</a>
+                    <a href="#geslaagden" class="hover:text-white transition-colors">Geslaagden</a>
+                    <a href="#reviews" class="hover:text-white transition-colors">Reviews</a>
+                    <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+            <div
+                class="mt-6 pt-6 border-t border-slate-800 text-xs text-slate-500 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="flex items-center gap-3">
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/31614792720" target="_blank" rel="noopener noreferrer"
+                        class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-green-600 hover:text-white transition-all duration-300 shadow-md hover:scale-110"
+                        title="WhatsApp">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.16 1.455 4.793 1.459 5.429 0 9.849-4.317 9.851-9.623.002-2.57-1.002-4.99-2.83-6.82C16.571 2.341 14.16 1.343 11.6 1.345c-5.431 0-9.85 4.318-9.853 9.624 0 1.954.512 3.86 1.481 5.541l-.97 3.542 3.659-.958zM17.47 14.39c-.32-.16-1.89-.93-2.18-1.04-.3-.1-.51-.16-.72.16-.21.32-.82 1.04-1 1.25-.19.21-.38.24-.7.08-.32-.16-1.34-.49-2.56-1.58-.95-.84-1.59-1.89-1.78-2.2-.19-.32-.02-.49.14-.65.15-.14.32-.38.48-.56.16-.18.21-.3.32-.5.1-.2.05-.38-.03-.54-.08-.16-.72-1.73-.98-2.37-.26-.63-.52-.54-.72-.55-.18-.01-.4-.01-.61-.01-.21 0-.56.08-.85.4-.29.32-1.12 1.1-1.12 2.68s1.15 3.1 1.31 3.32c.16.22 2.27 3.47 5.5 4.87.77.33 1.37.53 1.84.68.77.24 1.48.21 2.04.13.62-.09 1.89-.77 2.15-1.52.26-.75.26-1.4.19-1.52-.07-.12-.27-.19-.59-.35z" />
+                        </svg>
+                    </a>
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/autorijschoolalan/" target="_blank" rel="noopener noreferrer"
+                        class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-gradient-to-tr hover:from-amber-500 hover:to-purple-600 hover:text-white transition-all duration-300 shadow-md hover:scale-110"
+                        title="Instagram">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                        </svg>
+                    </a>
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/people/Autorijschool-ALAN/100051764816087/" target="_blank"
+                        rel="noopener noreferrer"
+                        class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-primary-600 hover:text-white transition-all duration-300 shadow-md hover:scale-110"
+                        title="Facebook">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z" />
+                        </svg>
+                    </a>
+                </div>
+                <span>
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script> Autorijschool Alan - <a
+                        href="Algemenevoorwaarden.pdf" target="_blank"
+                        class="hover:text-white transition-colors">Algemene voorwaarden</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        (function () {
+            // Mobile menu toggle
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (menuBtn && mobileMenu) {
+                menuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // Navbar background and topbar behavior on scroll
+            const navbar = document.getElementById('navbar');
+            const topBar = document.getElementById('top-bar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 20) {
+                    navbar.classList.add('glass', 'shadow-sm');
+                    if (topBar) {
+                        topBar.classList.add('-mt-8', 'opacity-0', 'pointer-events-none');
+                    }
+                } else {
+                    navbar.classList.remove('glass', 'shadow-sm');
+                    if (topBar) {
+                        topBar.classList.remove('-mt-8', 'opacity-0', 'pointer-events-none');
+                    }
+                }
+            });
+
+            // Smooth scroll for anchor links (except mobile menu links handled by default)
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth' });
+                        // Close mobile menu if open
+                        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                            mobileMenu.classList.add('hidden');
+                        }
+                    }
+                });
+            });
+
+            // Scroll reveal animation
+            const revealElements = document.querySelectorAll('.scroll-reveal');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            revealElements.forEach(el => observer.observe(el));
+
+            // Stat counter animation
+            const counters = document.querySelectorAll('.stat-counter');
+            const counterObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const el = entry.target;
+                        const target = parseInt(el.getAttribute('data-target'));
+                        if (!el.dataset.counted) {
+                            el.dataset.counted = true;
+                            let count = 0;
+                            const duration = 1500;
+                            const step = target / (duration / 16);
+                            const updateCounter = () => {
+                                count += step;
+                                if (count < target) {
+                                    el.textContent = Math.ceil(count);
+                                    requestAnimationFrame(updateCounter);
+                                } else {
+                                    el.textContent = target;
+                                }
+                            };
+                            updateCounter();
+                        }
+                        counterObserver.unobserve(el);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            counters.forEach(counter => counterObserver.observe(counter));
+        })();
+
+        // Toggle Modal for 229 Reviews
+        function toggleReviewsModal() {
+            const modal = document.getElementById('reviews-modal');
+            const backdrop = document.getElementById('reviews-modal-backdrop');
+            const content = document.getElementById('reviews-modal-content');
+            const isHidden = modal.classList.contains('hidden');
+
+            if (isHidden) {
+                // Open modal
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+
+                // Small delay to allow display:block to apply before animating
+                setTimeout(() => {
+                    backdrop.classList.remove('opacity-0');
+                    backdrop.classList.add('opacity-100');
+
+                    content.classList.remove('opacity-0', 'scale-95', 'translate-y-8');
+                    content.classList.add('opacity-100', 'scale-100', 'translate-y-0');
+                }, 10);
+            } else {
+                // Close modal
+                backdrop.classList.remove('opacity-100');
+                backdrop.classList.add('opacity-0');
+
+                content.classList.remove('opacity-100', 'scale-100', 'translate-y-0');
+                content.classList.add('opacity-0', 'scale-95', 'translate-y-8');
+
+                document.body.style.overflow = ''; // Restore scrolling
+
+                setTimeout(() => {
+                    modal.classList.add('hidden');
+                }, 300); // Wait for transition
+            }
+        }
+    </script>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/31614792720" target="_blank" rel="noopener noreferrer"
+        class="fixed bottom-6 right-6 z-[100] bg-[#25D366] text-white p-4 rounded-full shadow-lg shadow-[#25D366]/30 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#25D366]/40 transition-all duration-300 flex items-center justify-center group cursor-pointer"
+        aria-label="Contacteer ons via WhatsApp">
+        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+            <path
+                d="M12.031 0C5.385 0 0 5.383 0 12.031c0 2.128.552 4.195 1.6 6.023L.085 24l6.104-1.597c1.764.954 3.766 1.458 5.842 1.458 6.645 0 12.031-5.384 12.031-12.032C24 5.385 18.676 0 12.031 0zm3.896 16.924c-.172.482-.998.922-1.378.966-.381.045-.85.121-2.905-.694-2.484-.984-4.062-3.528-4.186-3.693-.125-.164-.997-1.328-.997-2.535 0-1.206.625-1.802.843-2.03.218-.228.474-.286.63-.286.157 0 .313 0 .445.006.136.007.322-.053.493.344.177.41.602 1.472.656 1.58.055.108.092.235.03.35-.064.116-.094.187-.188.297-.094.111-.198.24-.282.336-.093.102-.191.215-.084.385.107.17 4.77 2.802 4.77 2.802.138.225.39.231.543.14.152-.09.351-.41.445-.55.093-.141.188-.118.344-.06.155.059.98.463 1.147.545.168.082.28.121.321.188.04.067.04.39-.132.871z" />
+        </svg>
+    </a>
+</body>
+
+</html>
